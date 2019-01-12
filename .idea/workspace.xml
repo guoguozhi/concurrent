@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/test/TestSynchronized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMWaiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteWaiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express_bak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/waitNotify/Express.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/waitNotify/TestExpress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/test/TestSynchronized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/test/TestSynchronized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +26,7 @@
       <file leaf-file-name="VolatileSynchronizedTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileSynchronizedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
+            <state relative-caret-position="464">
               <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
               <folding>
                 <element signature="e#133#134#0" expanded="true" />
@@ -31,24 +36,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestExpress.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java">
+      <file leaf-file-name="TestExpressNotiferWaiter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+            <state relative-caret-position="391">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Express_bak.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express_bak.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpressSiteNotifier.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteNotifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpressKMNotifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
               <folding>
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Express.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java">
+      <file leaf-file-name="ExpressKMWaiter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMWaiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="374">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding>
+                <element signature="e#156#157#0" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +143,14 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitNotify/TestExpress.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/test/TestSynchronized.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitNotify/Express.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressNotifier.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMWaiter.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express_bak.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteWaiter.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteNotifier.java" />
       </list>
     </option>
   </component>
@@ -175,6 +218,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.guoguozhi.waitnotify" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -187,9 +235,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestExpress">
+  <component name="RunManager" selected="Application.TestExpressNotiferWaiter">
     <configuration name="TestExpress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guoguozhi.waitnotify.TestExpress" />
+      <module name="concurrent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoguozhi.waitnotify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TestExpressNotiferWaiter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.waitnotify.TestExpressNotiferWaiter" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
@@ -214,16 +272,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.guoguozhi.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="UseThreadLocal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.thread.UseThreadLocal" />
-      <module name="concurrent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoguozhi.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,19 +302,19 @@
       <method />
     </configuration>
     <list>
-      <item itemvalue="Application.UseThreadLocal" />
       <item itemvalue="Application.VolatileUnsafeTest" />
       <item itemvalue="Application.TestExpress" />
       <item itemvalue="Application.TestInterruptedException" />
       <item itemvalue="Application.TestSynchronized" />
+      <item itemvalue="Application.TestExpressNotiferWaiter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestExpressNotiferWaiter" />
         <item itemvalue="Application.TestExpress" />
         <item itemvalue="Application.TestInterruptedException" />
         <item itemvalue="Application.TestSynchronized" />
         <item itemvalue="Application.VolatileUnsafeTest" />
-        <item itemvalue="Application.UseThreadLocal" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +335,7 @@
       <workItem from="1547118796897" duration="8518000" />
       <workItem from="1547168190559" duration="16670000" />
       <workItem from="1547293483589" duration="3288000" />
-      <workItem from="1547297212606" duration="12244000" />
+      <workItem from="1547297212606" duration="16344000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -296,11 +344,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547299314841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="研究synchronized关键字、通知/等待的标准范式相关细节">
+      <created>1547313575026</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547313575026</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99298000" />
+    <option name="totallyTimeSpent" value="103398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="23" width="1349" height="835" extended-state="0" />
@@ -315,12 +370,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50038254" side_tool="true" weight="0.3292683" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.200542" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49593496" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292683" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18286152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21346596" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -374,68 +429,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="InterruptedException测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="InterruptedException测试" />
+    <MESSAGE value="研究synchronized关键字、通知/等待的标准范式相关细节" />
+    <option name="LAST_COMMIT_MESSAGE" value="研究synchronized关键字、通知/等待的标准范式相关细节" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileSynchronizedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileSynchronizedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="54" lean-forward="true" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/synchronize/SynchronizedInstanceAndClazz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -697,9 +699,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMWaiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileSynchronizedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="464">
           <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding>
             <element signature="e#133#134#0" expanded="true" />
@@ -708,21 +781,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java">
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteWaiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
-          <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="263">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java">
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express_bak.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="169">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>

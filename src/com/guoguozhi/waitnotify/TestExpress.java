@@ -4,7 +4,7 @@ import com.guoguozhi.tools.SleepTools;
 
 public class TestExpress {
 
-    private static Express express = new Express();
+    private static Express_bak express = new Express_bak();
 
     // 检测里程数的线程，当不满足条件继续等待
     private static class CheckCurrentKilometresThread extends Thread{
