@@ -50,6 +50,7 @@ public class Express_bak {// 第三方
         this.currentSite = "beijing";
         // 发出通知
         this.notifyAll();
+        //this.notify();
         System.out.println("改变当前里程数的线程: "+ Thread.currentThread().getName());
         // 进行自己的业务处理
         System.out.println("结束改变当前位置并发出通知." + Thread.currentThread().getName());
@@ -87,6 +88,7 @@ public class Express_bak {// 第三方
         while(!"beijing".equals(this.currentSite)){
             // 继续等待
             try {
+                System.out.println("waiting ... ...");
                 this.wait(); // wait方法执行时，需先获取锁，在执行了wait方法以后，线程处于阻塞状态，然后并释放了对象锁
                 System.out.println("checking 当前位置的线程: " + Thread.currentThread().getName());
             } catch (InterruptedException e) {
