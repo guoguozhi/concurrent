@@ -1,4 +1,4 @@
-package com.guoguozhi.waitNotify;
+package com.guoguozhi.waitnotify;
 
 import com.guoguozhi.tools.SleepTools;
 
@@ -65,7 +65,7 @@ public class TestExpress {
         //changeCurrentKilometresThread.start();
 
         ChangeCurrentSiteThread changeCurrentSiteThread = new ChangeCurrentSiteThread();
-        //changeCurrentSiteThread.start();
+       // changeCurrentSiteThread.start();
 
     }
 }
