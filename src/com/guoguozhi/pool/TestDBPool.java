@@ -1,12 +1,16 @@
 package com.guoguozhi.pool;
 
 import java.sql.SQLException;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class TestDBPool {
 
     // 数据库连接池(初始化10个连接)
     private static DBPool pool = new DBPool(10);
+
+    // 栅栏
+    static CountDownLatch latch;
 
     // 工作线程
     private static class Worker implements Runnable {
@@ -61,15 +65,19 @@ public class TestDBPool {
                     count--;
                 }
             }
-            System.out.println(Thread.currentThread().getName() + " get:" + this.get.get() + " notGet:" + this.notGet.get());
+            //System.out.println(Thread.currentThread().getName() + " get:" + this.get.get() + " notGet:" + this.notGet.get());
+            // 在线程run方法结束时调用countDown使计数器-1
+            latch.countDown();
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws InterruptedException {
+        // numberOfWorkerThreads * numberOfCounts = get + notGet
         // 线程总数
-        int numberOfWorkerThreads = 50;
+        int numberOfWorkerThreads = 20;
+        latch = new CountDownLatch(numberOfWorkerThreads);
         // 操作次数
-        int numberOfCounts = 20;
+        int numberOfCounts = 10;
         // 成功计数器
         AtomicInteger get = new AtomicInteger();
         // 失败计数器
@@ -80,6 +88,9 @@ public class TestDBPool {
             Thread workerThread = new Thread(worker, "worker-" + (i + 1));
             workerThread.start();
         }
+        // 在主线程中加了await方法，阻塞，需等worker线程都执行结束以后才执行后面的代码
+        latch.await();
+        System.out.println("total number of try count is " +  (numberOfCounts * numberOfWorkerThreads)  + " get:" + get.get() + " notGet:" + notGet.get());
     }
 }
 
