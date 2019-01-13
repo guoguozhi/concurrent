@@ -25,7 +25,7 @@ public class DBPool {
     // 获取连接(mills毫秒内获取不到连接就返回)
     public Connection fetchConnection(long mills) {
         synchronized (this.pool) {
-            if (mills <= 0) { // 无超时时间
+            if (mills <= 0) { // 无超时时间，获取不到连接就死磕
                 // 数据库连接池为空则线程等待并释放锁
                 while (this.pool.isEmpty()) {
                     try {
@@ -35,9 +35,12 @@ public class DBPool {
                     }
                 }
                 // 取连接
-                Connection connection = this.pool.removeFirst();
+                Connection connection = null;
+                if (!this.pool.isEmpty()) {
+                    connection = this.pool.removeFirst();
+                }
                 return connection;
-            } else {// seconds为超时时间
+            } else {// seconds为超时时间，要么获取到连接，要么返回一个null
                 // 连接池为空且剩余时间>0就等待
                 // 超时时间=当前时间+等待时间
                 long overtime =  System.currentTimeMillis() + mills;
@@ -52,7 +55,10 @@ public class DBPool {
                     remain = overtime - System.currentTimeMillis();
                 }
                 // 取连接
-                Connection connection = this.pool.removeFirst();
+                Connection connection = null;
+                if (!this.pool.isEmpty()) {
+                    connection = this.pool.removeFirst();
+                }
                 return connection;
             }
         }

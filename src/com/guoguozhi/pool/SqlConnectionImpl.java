@@ -11,12 +11,13 @@ public class SqlConnectionImpl implements Connection {
 
     @Override
     public Statement createStatement() throws SQLException {
-        SleepTools.sleepForSeconds(2);
+        SleepTools.sleepForMilliseconds(100);
         return null;
     }
 
     @Override
     public PreparedStatement prepareStatement(String sql) throws SQLException {
+        SleepTools.sleepForSeconds(1);
         return null;
     }
 
