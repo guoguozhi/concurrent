@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/pool/TestDBPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/thread/TestJoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/pool/DBPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/pool/DBPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/pool/SqlConnectionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/pool/SqlConnectionImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,29 +14,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="concurrent" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestDBPool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/pool/TestDBPool.java">
+      <file leaf-file-name="UseJoin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-474">
-              <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+            <state relative-caret-position="594">
+              <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBPool.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/pool/DBPool.java">
+      <file leaf-file-name="TestJoin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/TestJoin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#208#220#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -106,8 +106,12 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express_bak.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/pool/SqlConnectionImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/pool/TestDBPool.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/pool/DBPool.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/pool/TestDBPool.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/latch/TestCountDownLatch.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/latch/TestJoin.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/TestJoin.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin.java" />
       </list>
     </option>
   </component>
@@ -121,7 +125,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="72" />
+    <option name="x" value="84" />
     <option name="y" value="23" />
     <option name="width" value="1349" />
     <option name="height" value="835" />
@@ -156,7 +160,7 @@
               <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="pool" type="462c0819:PsiDirectoryNode" />
+              <item name="waitnotify" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDBPool">
+  <component name="RunManager" selected="Application.UseJoin">
     <configuration name="TestDBPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guoguozhi.pool.TestDBPool" />
       <module name="concurrent" />
@@ -224,22 +228,22 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="TestInterruptedException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.test.TestInterruptedException" />
+    <configuration name="TestJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.thread.TestJoin" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.guoguozhi.test.*" />
+          <option name="PATTERN" value="com.guoguozhi.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="TestSynchronized" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.test.TestSynchronized" />
+    <configuration name="UseJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.thread.UseJoin" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.guoguozhi.test.*" />
+          <option name="PATTERN" value="com.guoguozhi.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -261,18 +265,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.TestExpress" />
-      <item itemvalue="Application.TestInterruptedException" />
-      <item itemvalue="Application.TestSynchronized" />
       <item itemvalue="Application.TestExpressNotiferWaiter" />
       <item itemvalue="Application.TestDBPool" />
+      <item itemvalue="Application.TestJoin" />
+      <item itemvalue="Application.UseJoin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UseJoin" />
+        <item itemvalue="Application.TestJoin" />
         <item itemvalue="Application.TestDBPool" />
         <item itemvalue="Application.TestExpress" />
         <item itemvalue="Application.TestExpressNotiferWaiter" />
-        <item itemvalue="Application.TestInterruptedException" />
-        <item itemvalue="Application.TestSynchronized" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +297,7 @@
       <workItem from="1547118796897" duration="8518000" />
       <workItem from="1547168190559" duration="16670000" />
       <workItem from="1547293483589" duration="3288000" />
-      <workItem from="1547297212606" duration="37079000" />
+      <workItem from="1547297212606" duration="47604000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -330,14 +334,28 @@
       <option name="project" value="LOCAL" />
       <updated>1547386590302</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="50个线程去数据库连接池中获取连接，初步使用AtomicInteger保证了计数器的原子性">
+      <created>1547393763333</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547393763333</updated>
+    </task>
+    <task id="LOCAL-00007" summary="简单使用CountDownLatch">
+      <created>1547396163966</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547396163966</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124133000" />
+    <option name="totallyTimeSpent" value="134658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="23" width="1349" height="835" extended-state="0" />
+    <frame x="84" y="23" width="1349" height="835" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -349,19 +367,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50038254" side_tool="true" weight="0.3292683" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34296978" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4717477" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.5176152" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292683" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20681986" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49934298" visible="true" weight="0.20681986" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6241787" />
+      <window_info id="Favorites" order="2" sideWeight="0.500657" side_tool="true" weight="0.20681986" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -412,35 +430,16 @@
     <MESSAGE value="定义notifier、waiter并进一步理解通知/等待(生产者-消费者)模型" />
     <MESSAGE value="研究其他线程对waiter的中断影响" />
     <MESSAGE value="等待/通知超时模型实现数据库连接池的获取和释放" />
-    <option name="LAST_COMMIT_MESSAGE" value="等待/通知超时模型实现数据库连接池的获取和释放" />
+    <MESSAGE value="50个线程去数据库连接池中获取连接，初步使用AtomicInteger保证了计数器的原子性" />
+    <MESSAGE value="简单使用CountDownLatch" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单使用CountDownLatch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/concurrent/FutureTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/concurrent/Callable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Thread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1902">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/lib/ant-javafx.jar!/com/oracle/tools/packager/RelativeFileSet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-274">
@@ -498,13 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/UseThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileUnsafeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -516,20 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-805">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/DaemonThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/NewThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -735,26 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="546" column="11" selection-start-line="546" selection-start-column="11" selection-end-line="546" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#15465#15466#0" expanded="true" />
-            <element signature="e#15531#15532#0" expanded="true" />
-            <element signature="e#17373#17374#0" expanded="true" />
-            <element signature="e#17414#17415#0" expanded="true" />
-            <element signature="e#18886#18887#0" expanded="true" />
-            <element signature="e#18929#18930#0" expanded="true" />
-            <element signature="e#37058#37059#0" expanded="true" />
-            <element signature="e#37101#37102#0" expanded="true" />
-            <element signature="e#43723#43724#0" expanded="true" />
-            <element signature="e#43750#43751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -776,16 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/pool/TestDBPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -793,13 +741,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="229" column="16" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/pool/DBPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state relative-caret-position="-181">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#208#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/pool/TestDBPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="1321" column="22" selection-start-line="1321" selection-start-column="22" selection-end-line="1321" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#15465#15466#0" expanded="true" />
+            <element signature="e#15531#15532#0" expanded="true" />
+            <element signature="e#17373#17374#0" expanded="true" />
+            <element signature="e#17414#17415#0" expanded="true" />
+            <element signature="e#18886#18887#0" expanded="true" />
+            <element signature="e#18929#18930#0" expanded="true" />
+            <element signature="e#37058#37059#0" expanded="true" />
+            <element signature="e#37101#37102#0" expanded="true" />
+            <element signature="e#43723#43724#0" expanded="true" />
+            <element signature="e#43750#43751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/DaemonThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/NewThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/UseThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/TestJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
           </folding>
         </state>
       </provider>
