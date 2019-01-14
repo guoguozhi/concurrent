@@ -1,7 +1,7 @@
 package com.guoguozhi.lock;
 
 /**
- * 测试wait和锁的关系
+ * 测试wait和锁的关系: wait方法会释放锁
  */
 public class WaitLock {
 
