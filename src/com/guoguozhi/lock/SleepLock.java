@@ -4,12 +4,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * 研究sleep方法会不会释放线程获取的锁
+ * 研究sleep方法会不会释放线程获取的锁: sleep不会释放锁(假如线程持有了锁，只能等同步块结束才会自然释放锁，如果线程不持有锁，就不谈释放锁)
  */
 public class SleepLock {
 
     // 锁
-    private Object lock = new Object();
+    private final Object lock = new Object();
 
     public static void main(String args[])  {
         SleepLock sleepLock = new SleepLock();
@@ -30,46 +30,50 @@ public class SleepLock {
     private class SleepThread extends Thread {
         @Override
         public void run() {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
-            String threadName = Thread.currentThread().getName();
-            System.out.println(threadName + " will take the lock. " + sdf.format(new Date()));
-            synchronized (lock) { // 获得锁
-                System.out.println(threadName + " has taken the lock." + sdf.format(new Date()));
+            if (!isInterrupted()) {
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
+                String threadName = Thread.currentThread().getName();
+                System.out.println(threadName + " will take the lock. " + sdf.format(new Date()));
+                synchronized (lock) { // 获得锁
+                    System.out.println(threadName + " has taken the lock." + sdf.format(new Date()));
 
+                    try {
+                        Thread.sleep(5000); // 假如sleep释放了锁，那么①处可能还没执行，②处就获得了锁，而实际上需等待③处执行完毕，②处才可获取锁
+                        System.out.println(threadName + " sleep end." + sdf.format(new Date())); // ①
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println(threadName + " will release the lock." + sdf.format(new Date())); // ③
+                }
+                System.out.println(threadName + " has released the lock." + sdf.format(new Date()));
+                /*
+                //  此时锁已释放，那怎么知道sleep方法是否释放锁呢？
                 try {
-                    Thread.sleep(5000); // 假如sleep释放了锁，那么①处可能还没执行，②处就获得了锁，而实际上需等待③处执行完毕，②处才可获取锁
-                    System.out.println(threadName + " sleep end." + sdf.format(new Date())); // ①
+                    Thread.sleep(5000);
+                    System.out.println(threadName + " sleep end." + sdf.format(new Date()));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
-                System.out.println(threadName + " will release the lock." + sdf.format(new Date())); // ③
+               */
             }
-            System.out.println(threadName + " has released the lock." + sdf.format(new Date()));
-            /*
-            //  此时锁已释放，那怎么知道sleep方法是否释放锁呢？
-            try {
-                Thread.sleep(5000);
-                System.out.println(threadName + " sleep end." + sdf.format(new Date()));
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-           */
         }
     }
 
     private class NotSleepThread extends Thread {
         @Override
         public void run() {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
-            String threadName = Thread.currentThread().getName();
-            System.out.println(threadName + " will take the lock."+ sdf.format(new Date()));
-            synchronized (lock) { // ②
-                System.out.println(threadName + " has taken the lock."+ sdf.format(new Date()));
+            if (!isInterrupted()) {
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
+                String threadName = Thread.currentThread().getName();
+                System.out.println(threadName + " will take the lock."+ sdf.format(new Date()));
+                synchronized (lock) { // ②
+                    System.out.println(threadName + " has taken the lock."+ sdf.format(new Date()));
 
-                System.out.println(threadName + " will release the lock."+ sdf.format(new Date()));
+                    System.out.println(threadName + " will release the lock."+ sdf.format(new Date()));
+                }
+                System.out.println(threadName + " has released the lock."+ sdf.format(new Date()));
             }
-            System.out.println(threadName + " has released the lock."+ sdf.format(new Date()));
         }
     }
 }
