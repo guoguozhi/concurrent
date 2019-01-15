@@ -12,7 +12,7 @@ public class NotifyLock {
         notNotifyThread.setName("notNotifyThread");
         notifyThread.start();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(800);
             System.out.println(Thread.currentThread().getName() + " sleep end");
         } catch (InterruptedException e) {
             e.printStackTrace();
