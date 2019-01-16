@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="Fork/Join框架求和研究">
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="递归目录">
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,15 +32,20 @@
     <select />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="concurrent" />
+    <favorites_list name="concurrent">
+      <favorite_root url="com.guoguozhi.forkjoin.file.ConcurrentRecurveDirectory" module="concurrent" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="172">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,6 +67,7 @@
       <find>Thread</find>
       <find>interrupt</find>
       <find>setName</find>
+      <find>execute</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/com/guoguozhi/thread</dir>
@@ -75,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Only.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/Only.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/OnlyMain.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/com/guoguozhi/thread/OnlyMain.java" />
@@ -122,10 +125,11 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/lock/NotifyLock.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/MakeArray.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/NormalSum.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/ConcurrentSum.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/test/TestOrika.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/test/TestOrika.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java" />
       </list>
     </option>
   </component>
@@ -136,7 +140,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
+    <option name="x" value="42" />
     <option name="y" value="23" />
     <option name="width" value="1349" />
     <option name="height" value="835" />
@@ -165,6 +169,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
+              <item name="forkjoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
+              <item name="forkjoin" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -177,12 +196,12 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547599732103" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547611194394" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -204,7 +223,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestOrika">
+  <component name="RunManager" selected="Application.ConcurrentRecursiveDirectory">
+    <configuration name="ConcurrentRecursiveDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.forkjoin.file.ConcurrentRecursiveDirectory" />
+      <module name="concurrent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoguozhi.forkjoin.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConcurrentSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guoguozhi.forkjoin.sum.ConcurrentSum" />
       <module name="concurrent" />
@@ -224,19 +256,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.guoguozhi.forkjoin.sum.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NotifyLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.lock.NotifyLock" />
-      <module name="concurrent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoguozhi.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,19 +290,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NotifyLock" />
       <item itemvalue="Application.NormalSum" />
       <item itemvalue="Application.ConcurrentSum" />
       <item itemvalue="Application.RecursiveDirectory" />
       <item itemvalue="Application.TestOrika" />
+      <item itemvalue="Application.ConcurrentRecursiveDirectory" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestOrika" />
+        <item itemvalue="Application.ConcurrentRecursiveDirectory" />
         <item itemvalue="Application.RecursiveDirectory" />
+        <item itemvalue="Application.TestOrika" />
         <item itemvalue="Application.ConcurrentSum" />
         <item itemvalue="Application.NormalSum" />
-        <item itemvalue="Application.NotifyLock" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +326,7 @@
       <workItem from="1547297212606" duration="63660000" />
       <workItem from="1547470547873" duration="318000" />
       <workItem from="1547471358081" duration="32584000" />
-      <workItem from="1547599654403" duration="78000" />
+      <workItem from="1547599654403" duration="9620000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -393,18 +412,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547536803047</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="递归目录">
+      <created>1547599759889</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1547599759889</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183694000" />
+    <option name="totallyTimeSpent" value="193236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="23" width="1349" height="835" extended-state="0" />
-    <editor active="true" />
+    <frame x="42" y="23" width="1349" height="835" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.24091521" visible="true" weight="0.30527925" />
-      <window_info id="Structure" order="1" sideWeight="0.7590848" side_tool="true" weight="0.21652639" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.2395693" visible="true" weight="0.20428462" />
+      <window_info id="Structure" order="1" sideWeight="0.7604307" side_tool="true" weight="0.20428462" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -412,7 +437,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3795424" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9300135" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41991925" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -437,37 +462,38 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32976282" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.24091521" visible="true" weight="0.21652639" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.24091521" visible="true" weight="0.30527925" />
       <window_info id="Structure" order="1" sideWeight="0.7590848" side_tool="true" weight="0.21652639" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.7590848" side_tool="true" weight="0.21652639" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.5181696" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32839838" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.32032302" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.41991925" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292683" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50038254" side_tool="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.5176152" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49961746" weight="0.32839838" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33109018" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41991925" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50038254" side_tool="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.5168237" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.32839838" />
+      <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.5181696" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24942617" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32976282" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32976282" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32976282" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +512,8 @@
     <MESSAGE value="测试wait和锁的关系" />
     <MESSAGE value="测试notify和锁的关系" />
     <MESSAGE value="Fork/Join框架求和研究" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fork/Join框架求和研究" />
+    <MESSAGE value="递归目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="递归目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -505,13 +532,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/UseThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/TestJoin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -595,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2945">
-          <caret line="129" column="53" lean-forward="true" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/RecursiveAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -657,24 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/MakeArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/NormalSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="848" selection-start-line="848" selection-end-line="848" />
         </state>
       </provider>
     </entry>
@@ -687,13 +686,6 @@
             <element signature="e#23443#23444#0" expanded="true" />
             <element signature="e#23515#23516#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/classes/orika-core-1.3.4.jar!/ma/glasnost/orika/CustomMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -792,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/classes/orika-core-1.3.4.jar!/ma/glasnost/orika/converter/builtin/ConstructorConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/classes/orika-core-1.3.4.jar!/ma/glasnost/orika/impl/generator/CodeSourceBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -837,30 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/test/TestInterruptedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/ConcurrentSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-579">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/test/TestSynchronized.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -878,24 +839,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/test/TestOrika.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/classes/orika-core-1.3.4.jar!/ma/glasnost/orika/converter/builtin/ConstructorConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/classes/orika-core-1.3.4.jar!/ma/glasnost/orika/CustomMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/ConcurrentSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/MakeArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/test/TestInterruptedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/test/TestOrika.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="2626" column="16" selection-start-line="2626" selection-start-column="16" selection-end-line="2626" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
