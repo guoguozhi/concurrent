@@ -4,6 +4,8 @@ import com.guoguozhi.tools.SleepTools;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 public class UseCyclicBarrier2 {
 
@@ -20,12 +22,17 @@ public class UseCyclicBarrier2 {
                     e.printStackTrace();
                 }
                 try {
-                    barrier.await();
+                    //barrier.await();
+                    barrier.await(1, TimeUnit.SECONDS); //  表示从线程获取CPU执行权并执行后，最多等1s，否则超时抛出TimeoutException，并将破损标志位broken置位true
                 } catch (InterruptedException e) {
+                    //  线程A被interrupt，barrier的破损标志位为true
                     System.out.println("when A is  waiting, A is interrupted. barrier is broken? " + barrier.isBroken());
                     e.printStackTrace();
                 } catch (BrokenBarrierException e) {
                     System.out.println("A barrier is broken.");
+                    e.printStackTrace();
+                } catch (TimeoutException e) {
+                    System.out.println("A timeout barrier is  broken?" + barrier.isBroken());
                     e.printStackTrace();
                 }
             }
@@ -72,9 +79,9 @@ public class UseCyclicBarrier2 {
         ThreadA threadA = new ThreadA();
         threadA.start();
 
-        SleepTools.sleepForMilliseconds(2000);
+        SleepTools.sleepForMilliseconds(100);
 
-        threadA.interrupt();
+        //threadA.interrupt();
 
         ThreadB threadB = new ThreadB();
         threadB.start();
@@ -83,3 +90,6 @@ public class UseCyclicBarrier2 {
         threadC.start();
     }
 }
+
+//  不管什么原因导致了barrier is broken，那么最初定义的需要相互等待的线程，在执行await方法时，会抛出BarrierBrokenException异常~
+
