@@ -25,7 +25,6 @@ public class UseCyclicBarrier2 {
                 barrier.reset();
                 System.out.println("A barrier's broken is " + barrier.isBroken());
 
-                /*
                 try {
                     //barrier.await();
                     barrier.await(1, TimeUnit.SECONDS); //  表示从线程获取CPU执行权并执行后，最多等1s，否则超时抛出TimeoutException，并将破损标志位broken置位true
@@ -40,7 +39,6 @@ public class UseCyclicBarrier2 {
                     System.out.println("A timeout barrier is  broken?" + barrier.isBroken());
                     e.printStackTrace();
                 }
-                */
 
             }
         }

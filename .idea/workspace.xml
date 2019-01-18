@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="测试TimeoutException对barrier的破损标志位broken的影响">
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="对barrier屏障/障碍/栅栏的reset方法的理解">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java" afterDir="false" />
     </list>
@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="74" column="89" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
+            <state relative-caret-position="176">
+              <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,7 +188,7 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547797951163" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547798141767" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -322,7 +322,7 @@
       <workItem from="1547643434228" duration="3591000" />
       <workItem from="1547651027704" duration="1283000" />
       <workItem from="1547655555410" duration="21086000" />
-      <workItem from="1547718257743" duration="29216000" />
+      <workItem from="1547718257743" duration="29336000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -485,11 +485,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547795141069</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="对barrier屏障/障碍/栅栏的reset方法的理解">
+      <created>1547797993869</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1547797993869</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255628000" />
+    <option name="totallyTimeSpent" value="255748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,7 +523,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.41991925" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.30586907" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.30586907" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32844242" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.5846501" />
@@ -609,7 +616,8 @@
     <MESSAGE value="线程间数据交换" />
     <MESSAGE value="深入理解await方法" />
     <MESSAGE value="测试TimeoutException对barrier的破损标志位broken的影响" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试TimeoutException对barrier的破损标志位broken的影响" />
+    <MESSAGE value="对barrier屏障/障碍/栅栏的reset方法的理解" />
+    <option name="LAST_COMMIT_MESSAGE" value="对barrier屏障/障碍/栅栏的reset方法的理解" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1020,8 +1028,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="74" column="89" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
+        <state relative-caret-position="176">
+          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
