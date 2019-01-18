@@ -5,7 +5,7 @@ import com.guoguozhi.tools.SleepTools;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * 测试CountDownLatch
+ * 测试CountDownLatch 倒计时门闩
  */
 public class UseCountDownLatch {
 
