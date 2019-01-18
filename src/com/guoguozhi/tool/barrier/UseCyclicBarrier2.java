@@ -21,13 +21,11 @@ public class UseCyclicBarrier2 {
                     System.out.println("when A is  sleeping, A  is interrupted. ");
                     e.printStackTrace();
                 }
-
-                barrier.reset();
-                System.out.println("A barrier's broken is " + barrier.isBroken());
-
+                //barrier.reset();
+                //System.out.println("A barrier's broken is " + barrier.isBroken());
                 try {
-                    //barrier.await();
-                    barrier.await(1, TimeUnit.SECONDS); //  表示从线程获取CPU执行权并执行后，最多等1s，否则超时抛出TimeoutException，并将破损标志位broken置位true
+                    barrier.await();
+                    //barrier.await(1, TimeUnit.SECONDS); //  表示从线程获取CPU执行权并执行后，最多等1s，否则超时抛出TimeoutException，并将破损标志位broken置位true
                 } catch (InterruptedException e) {
                     //  线程A被interrupt，barrier的破损标志位为true
                     System.out.println("when A is  waiting, A is interrupted. barrier is broken? " + barrier.isBroken());
@@ -35,11 +33,11 @@ public class UseCyclicBarrier2 {
                 } catch (BrokenBarrierException e) {
                     System.out.println("A barrier is broken.");
                     e.printStackTrace();
-                } catch (TimeoutException e) {
+                } /*catch (TimeoutException e) {
                     System.out.println("A timeout barrier is  broken?" + barrier.isBroken());
                     e.printStackTrace();
-                }
-
+                }*/
+                System.out.println("A barrier's broken is " + barrier.isBroken());
             }
         }
     }
@@ -60,6 +58,7 @@ public class UseCyclicBarrier2 {
                     System.out.println("B barrier is broken.");
                     e.printStackTrace();
                 }
+                System.out.println("B barrier's broken is " + barrier.isBroken());
             }
         }
     }
@@ -80,6 +79,7 @@ public class UseCyclicBarrier2 {
                     System.out.println("C barrier is broken.");
                     e.printStackTrace();
                 }
+                System.out.println("C barrier's broken is " + barrier.isBroken());
             }
         }
     }
@@ -88,15 +88,16 @@ public class UseCyclicBarrier2 {
         ThreadA threadA = new ThreadA();
         threadA.start();
 
-        SleepTools.sleepForMilliseconds(100);
-
+        //SleepTools.sleepForMilliseconds(100);
         //threadA.interrupt();
-
         ThreadB threadB = new ThreadB();
         threadB.start();
 
         ThreadC threadC = new ThreadC();
         threadC.start();
+
+        SleepTools.sleepForSeconds(20);
+        System.out.println("barrier's broken is " + barrier.isBroken());
     }
 }
 
