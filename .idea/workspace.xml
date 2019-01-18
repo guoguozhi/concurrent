@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="深入理解await方法">
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="测试TimeoutException对barrier的破损标志位broken的影响">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java" afterDir="false" />
     </list>
@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-343">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="223">
+              <caret line="74" column="89" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,21 +174,6 @@
             </path>
             <path>
               <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-              <item name="barrier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -203,7 +188,7 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547795086664" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547797951163" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -337,7 +322,7 @@
       <workItem from="1547643434228" duration="3591000" />
       <workItem from="1547651027704" duration="1283000" />
       <workItem from="1547655555410" duration="21086000" />
-      <workItem from="1547718257743" duration="26358000" />
+      <workItem from="1547718257743" duration="29216000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -493,11 +478,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547791944411</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="测试TimeoutException对barrier的破损标志位broken的影响">
+      <created>1547795141069</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1547795141069</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252770000" />
+    <option name="totallyTimeSpent" value="255628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,7 +516,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.41991925" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.6275395" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.30586907" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32844242" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.5846501" />
@@ -558,7 +550,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.41991925" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.6275395" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.30586907" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32844242" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.5846501" />
@@ -616,7 +608,8 @@
     <MESSAGE value="小修改" />
     <MESSAGE value="线程间数据交换" />
     <MESSAGE value="深入理解await方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="深入理解await方法" />
+    <MESSAGE value="测试TimeoutException对barrier的破损标志位broken的影响" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试TimeoutException对barrier的破损标志位broken的影响" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1004,10 +997,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1227">
+          <caret line="119" column="4" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CyclicBarrier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="430" column="15" selection-start-line="430" selection-start-column="15" selection-end-line="430" selection-end-column="15" />
+        <state relative-caret-position="278">
+          <caret line="188" column="17" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#9581#9582#0" expanded="true" />
@@ -1018,17 +1018,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1227">
-          <caret line="119" column="4" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseCyclicBarrier2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="223">
+          <caret line="74" column="89" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
