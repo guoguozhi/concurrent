@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="对join方法的理解，实现A-&gt;B-&gt;C-&gt;D-">
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin2.java" afterDir="false" />
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="对join方法的理解，实现A-&gt;B-&gt;C-&gt;D-E-&gt;main的执行顺序">
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicIntegerArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,11 +38,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin2.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+            <state relative-caret-position="193">
+              <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicIntegerArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -81,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/test/TestInterruptedException.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitNotify/TestExpress.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/test/TestSynchronized.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitNotify/Express.java" />
@@ -132,6 +143,7 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicMarkableReference.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin2.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicIntegerArray.java" />
       </list>
     </option>
   </component>
@@ -142,7 +154,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
+    <option name="x" value="70" />
     <option name="y" value="23" />
     <option name="width" value="1606" />
     <option name="height" value="978" />
@@ -177,7 +189,7 @@
               <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="atomic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
@@ -239,7 +251,7 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548000334311" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548000598299" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -267,9 +279,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UseJoin2">
-    <configuration name="UseAtomicInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.atomic.UseAtomicInteger" />
+  <component name="RunManager" selected="Application.UseAtomicIntegerArray">
+    <configuration name="UseAtomicIntegerArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.atomic.UseAtomicIntegerArray" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
@@ -334,19 +346,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UseAtomicInteger" />
       <item itemvalue="Application.UseAtomicReference" />
       <item itemvalue="Application.UseAtomicMarkableReference" />
       <item itemvalue="Application.UseAtomicStampedReference" />
       <item itemvalue="Application.UseJoin2" />
+      <item itemvalue="Application.UseAtomicIntegerArray" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UseAtomicIntegerArray" />
         <item itemvalue="Application.UseJoin2" />
         <item itemvalue="Application.UseAtomicStampedReference" />
         <item itemvalue="Application.UseAtomicMarkableReference" />
         <item itemvalue="Application.UseAtomicReference" />
-        <item itemvalue="Application.UseAtomicInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +391,7 @@
       <workItem from="1547953079626" duration="728000" />
       <workItem from="1547954078765" duration="11319000" />
       <workItem from="1547969065668" duration="2000" />
-      <workItem from="1547969071225" duration="17613000" />
+      <workItem from="1547969071225" duration="17874000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -619,11 +631,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547998833861</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="对join方法的理解，实现A-&gt;B-&gt;C-&gt;D-E-&gt;main的执行顺序">
+      <created>1548000348922</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1548000348922</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294049000" />
+    <option name="totallyTimeSpent" value="294310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,7 +654,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="23" width="1606" height="978" extended-state="0" />
+    <frame x="70" y="23" width="1606" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31104198" visible="true" weight="0.1892583" />
@@ -647,10 +666,10 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
-      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49940476" weight="0.46726862" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" sideWeight="0.49940476" visible="true" weight="0.46726862" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49940476" visible="true" weight="0.23814899" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" weight="0.23814899" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32807216" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.26072234" />
@@ -720,7 +739,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="测试wait和锁的关系" />
     <MESSAGE value="测试notify和锁的关系" />
     <MESSAGE value="Fork/Join框架求和研究" />
     <MESSAGE value="递归目录" />
@@ -745,7 +763,8 @@
     <MESSAGE value="AtomicReference的学习" />
     <MESSAGE value="理解CAS的ABA问题，简单使用AtomicMarkableReference和AtomicStampedReference" />
     <MESSAGE value="进一步理解CAS" />
-    <option name="LAST_COMMIT_MESSAGE" value="进一步理解CAS" />
+    <MESSAGE value="对join方法的理解，实现A-&gt;B-&gt;C-&gt;D-E-&gt;main的执行顺序" />
+    <option name="LAST_COMMIT_MESSAGE" value="对join方法的理解，实现A-&gt;B-&gt;C-&gt;D-E-&gt;main的执行顺序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -764,13 +783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/test/TestOrika.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -1110,13 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/ConcurrentSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/MakeArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1128,13 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -1168,20 +1166,6 @@
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#200#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1807#2290#0" expanded="true" />
-            <element signature="e#2289#2290#0" expanded="true" />
-            <element signature="e#2346#2829#0" expanded="true" />
-            <element signature="e#2828#2829#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1223,8 +1207,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/thread/UseJoin2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+        <state relative-caret-position="439">
+          <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/ConcurrentSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicIntegerArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
