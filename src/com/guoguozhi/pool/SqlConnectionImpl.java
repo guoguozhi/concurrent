@@ -9,6 +9,10 @@ import java.util.concurrent.Executor;
 
 public class SqlConnectionImpl implements Connection {
 
+    public static SqlConnectionImpl newConnection() {
+        return new SqlConnectionImpl();
+    }
+
     @Override
     public Statement createStatement() throws SQLException {
         SleepTools.sleepForMilliseconds(100);
