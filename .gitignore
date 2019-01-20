@@ -3,6 +3,7 @@
 # directories
 out
 classes
+lib
 # Compiled class file
 *.class
 

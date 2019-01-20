@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore2.java" afterDir="false" />
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="一个Semaphore实现线程池的最大并发连接数(连接流量控制)">
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/future/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/future/A1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/future/A2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/future/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/future/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,26 +43,12 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore2.java">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            <state relative-caret-position="438">
+              <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +64,7 @@
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -99,12 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/NewThread.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/DaemonThread.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/synchronized/SynchronizedInstanceAndClazz.kt" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/SynchronizedInstanceAndClazz.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/synchronized/SynchronizedInstanceAndClazz.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/sleep/SleepTools.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/tools/SleepTools.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/synchronize/SynchronizedInstanceAndClazz.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileSynchronizedTest.java" />
@@ -135,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/MakeArray.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/NormalSum.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/ConcurrentSum.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/test/TestOrika.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java" />
@@ -150,6 +134,13 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore2.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/future/A.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/future/A1.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/future/A2.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/future/B.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/future/C.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java" />
       </list>
     </option>
   </component>
@@ -160,10 +151,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
+    <option name="x" value="23" />
     <option name="y" value="23" />
-    <option name="width" value="1571" />
-    <option name="height" value="978" />
+    <option name="width" value="1667" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,15 +186,7 @@
               <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-              <item name="semaphore" type="462c0819:PsiDirectoryNode" />
+              <item name="future" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
@@ -220,7 +203,7 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547965618884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547971931597" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -248,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDBPoolSemaphore">
+  <component name="RunManager" selected="Application.UseFutureTask">
     <configuration name="TestDBPoolSemaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guoguozhi.tool.semaphore.TestDBPoolSemaphore" />
       <module name="concurrent" />
@@ -264,19 +247,6 @@
     </configuration>
     <configuration name="UseBarrierAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guoguozhi.tool.barrier.UseBarrierAction" />
-      <module name="concurrent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoguozhi.tool.barrier.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UseCyclicBarrier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.tool.barrier.UseCyclicBarrier" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
@@ -314,20 +284,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UseFutureTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.future.UseFutureTask" />
+      <module name="concurrent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoguozhi.future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.UseCyclicBarrier" />
       <item itemvalue="Application.UseExchange" />
       <item itemvalue="Application.UseCyclicBarrier2" />
       <item itemvalue="Application.UseBarrierAction" />
       <item itemvalue="Application.TestDBPoolSemaphore" />
+      <item itemvalue="Application.UseFutureTask" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UseFutureTask" />
         <item itemvalue="Application.TestDBPoolSemaphore" />
         <item itemvalue="Application.UseBarrierAction" />
         <item itemvalue="Application.UseCyclicBarrier2" />
         <item itemvalue="Application.UseExchange" />
-        <item itemvalue="Application.UseCyclicBarrier" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +341,9 @@
       <workItem from="1547718257743" duration="37556000" />
       <workItem from="1547899560593" duration="419000" />
       <workItem from="1547953079626" duration="728000" />
-      <workItem from="1547954078765" duration="8820000" />
+      <workItem from="1547954078765" duration="11319000" />
+      <workItem from="1547969065668" duration="2000" />
+      <workItem from="1547969071225" duration="2797000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -556,11 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547964006921</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="一个Semaphore实现线程池的最大并发连接数(连接流量控制)">
+      <created>1547965744531</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1547965744531</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273935000" />
+    <option name="totallyTimeSpent" value="279233000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -572,11 +564,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="23" width="1571" height="978" extended-state="0" />
+    <frame x="-17" y="23" width="1667" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.1489842" visible="true" weight="0.22825377" />
-      <window_info id="Structure" order="1" sideWeight="0.8510158" side_tool="true" weight="0.28711575" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31116122" visible="true" weight="0.23875225" />
+      <window_info id="Structure" order="1" sideWeight="0.6888388" side_tool="true" weight="0.35103786" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -584,16 +576,16 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.41991925" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49940476" weight="0.40969163" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.3013544" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32844242" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49940476" visible="true" weight="0.30837005" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32807216" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.53724605" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50038254" side_tool="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005952" side_tool="true" weight="0.30837005" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.51580137" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.32731378" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.3270925" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.5181696" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -609,8 +601,8 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32976282" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.1489842" visible="true" weight="0.28711575" />
-      <window_info id="Structure" order="1" sideWeight="0.8510158" side_tool="true" weight="0.28711575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31116122" visible="true" weight="0.24297924" />
+      <window_info id="Structure" order="1" sideWeight="0.6888388" side_tool="true" weight="0.35103786" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -621,8 +613,8 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.41991925" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.3013544" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32844242" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.29425028" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32807216" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.53724605" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50038254" side_tool="true" weight="0.3292683" />
@@ -657,7 +649,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="研究其他线程对waiter的中断影响" />
     <MESSAGE value="等待/通知超时模型实现数据库连接池的获取和释放" />
     <MESSAGE value="50个线程去数据库连接池中获取连接，初步使用AtomicInteger保证了计数器的原子性" />
     <MESSAGE value="简单使用CountDownLatch" />
@@ -682,7 +673,8 @@
     <MESSAGE value="对破损标志位broken的理解" />
     <MESSAGE value="对barrierAction屏障线程的理解" />
     <MESSAGE value="测试Semaphore" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试Semaphore" />
+    <MESSAGE value="一个Semaphore实现线程池的最大并发连接数(连接流量控制)" />
+    <option name="LAST_COMMIT_MESSAGE" value="一个Semaphore实现线程池的最大并发连接数(连接流量控制)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -701,119 +693,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="275" column="31" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/MakeArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/ConcurrentSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileSynchronizedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileUnsafeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="1700" column="21" selection-start-line="1700" selection-start-column="16" selection-end-line="1700" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="1002" column="7" lean-forward="true" selection-start-line="1002" selection-start-column="7" selection-end-line="1002" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/InterruptedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Exchanger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="388" column="80" lean-forward="true" selection-start-line="388" selection-start-column="80" selection-end-line="388" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#22414#22415#0" expanded="true" />
-            <element signature="e#22461#22462#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6451">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/TransferQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Callable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -878,13 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1969">
-          <caret line="217" column="13" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1127,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="153">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1143,6 +1015,123 @@
             <element signature="imports" expanded="true" />
             <element signature="e#491#492#0" expanded="true" />
             <element signature="e#540#541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/A2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/A1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/C.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Future.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-538">
+          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/RunnableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/FutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="208" column="7" lean-forward="true" selection-start-line="208" selection-start-column="7" selection-end-line="208" selection-end-column="7" />
+          <folding>
+            <element signature="e#5351#5352#0" expanded="true" />
+            <element signature="e#5386#5387#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/logging/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="402" column="12" selection-start-line="402" selection-start-column="12" selection-end-line="402" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/org/slf4j/LoggerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="199" column="25" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="25" />
+          <folding>
+            <element signature="e#8235#8236#0" expanded="true" />
+            <element signature="e#8284#8285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/org/slf4j/Marker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/META-INF/maven/org.slf4j/slf4j-api/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/META-INF/maven/org.slf4j/slf4j-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1133" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
