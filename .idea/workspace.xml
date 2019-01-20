@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="FutureTask的练习">
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicInteger.java" afterDir="false" />
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="AtomicInteger的学习">
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicReference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,10 +39,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicInteger.java">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicReference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
+            <state relative-caret-position="554">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <element signature="e#200#210#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/synchronize/SynchronizedInstanceAndClazz.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileSynchronizedTest.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/vola/VolatileUnsafeTest.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/UseThreadLocal.java" />
@@ -132,6 +138,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicInteger.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicReference.java" />
       </list>
     </option>
   </component>
@@ -142,7 +149,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+    <option name="x" value="71" />
     <option name="y" value="23" />
     <option name="width" value="1561" />
     <option name="height" value="978" />
@@ -172,6 +179,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
+              <item name="atomic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
+              <item name="future" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -183,7 +204,7 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547990731758" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547992252732" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -211,7 +232,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UseAtomicInteger">
+  <component name="RunManager" selected="Application.UseAtomicReference">
     <configuration name="TestDBPoolSemaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guoguozhi.tool.semaphore.TestDBPoolSemaphore" />
       <module name="concurrent" />
@@ -238,12 +259,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseBarrierAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.tool.barrier.UseBarrierAction" />
+    <configuration name="UseAtomicReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.atomic.UseAtomicReference" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.guoguozhi.tool.barrier.*" />
+          <option name="PATTERN" value="com.guoguozhi.atomic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,8 +272,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseCyclicBarrier2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.tool.barrier.UseCyclicBarrier2" />
+    <configuration name="UseBarrierAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.tool.barrier.UseBarrierAction" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
@@ -278,19 +299,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UseCyclicBarrier2" />
       <item itemvalue="Application.UseBarrierAction" />
       <item itemvalue="Application.TestDBPoolSemaphore" />
       <item itemvalue="Application.UseFutureTask" />
       <item itemvalue="Application.UseAtomicInteger" />
+      <item itemvalue="Application.UseAtomicReference" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UseAtomicReference" />
         <item itemvalue="Application.UseAtomicInteger" />
         <item itemvalue="Application.UseFutureTask" />
         <item itemvalue="Application.TestDBPoolSemaphore" />
         <item itemvalue="Application.UseBarrierAction" />
-        <item itemvalue="Application.UseCyclicBarrier2" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +344,7 @@
       <workItem from="1547953079626" duration="728000" />
       <workItem from="1547954078765" duration="11319000" />
       <workItem from="1547969065668" duration="2000" />
-      <workItem from="1547969071225" duration="8323000" />
+      <workItem from="1547969071225" duration="9847000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -535,11 +556,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547971953960</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="AtomicInteger的学习">
+      <created>1547990767405</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1547990767405</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284759000" />
+    <option name="totallyTimeSpent" value="286283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -551,11 +579,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="23" width="1561" height="978" extended-state="0" />
+    <frame x="71" y="23" width="1561" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.1918736" visible="true" weight="0.24753127" />
-      <window_info id="Structure" order="1" sideWeight="0.8081264" side_tool="true" weight="0.24753127" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.19193324" visible="true" weight="0.23436472" />
+      <window_info id="Structure" order="1" sideWeight="0.8080668" side_tool="true" weight="0.38117182" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -566,10 +594,10 @@
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49940476" weight="0.46726862" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49940476" visible="true" weight="0.30812642" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" weight="0.503386" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32807216" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.53724605" />
+      <window_info active="true" anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" visible="true" weight="0.26072234" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005952" side_tool="true" weight="0.30837005" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.51580137" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.3270925" />
@@ -636,7 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="50个线程去数据库连接池中获取连接，初步使用AtomicInteger保证了计数器的原子性" />
     <MESSAGE value="简单使用CountDownLatch" />
     <MESSAGE value="测试线程的join方法" />
     <MESSAGE value="测试sleep方法和锁的关系" />
@@ -661,7 +688,8 @@
     <MESSAGE value="测试Semaphore" />
     <MESSAGE value="一个Semaphore实现线程池的最大并发连接数(连接流量控制)" />
     <MESSAGE value="FutureTask的练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="FutureTask的练习" />
+    <MESSAGE value="AtomicInteger的学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="AtomicInteger的学习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,31 +708,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/BrokenBarrierException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-          <folding>
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CancellationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/BiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/BinaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1088,13 +1091,6 @@
         <state relative-caret-position="-1133" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1123,6 +1119,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="295" column="48" lean-forward="true" selection-start-line="295" selection-start-column="48" selection-end-line="295" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+          <folding>
+            <element signature="e#2538#2539#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="e#200#210#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
