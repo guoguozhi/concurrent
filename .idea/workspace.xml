@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="对barrierAction屏障线程的理解">
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" afterDir="false" />
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/pool/SqlConnectionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/pool/SqlConnectionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,12 +41,14 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="50" column="81" lean-forward="true" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
+            <state relative-caret-position="686">
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state relative-caret-position="323">
+              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,7 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/StartAndRun.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/NewThread.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/thread/DaemonThread.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/synchronized/SynchronizedInstanceAndClazz.kt" />
@@ -146,8 +147,9 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/test/Format.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/pool/SqlConnectionImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore2.java" />
       </list>
     </option>
   </component>
@@ -201,30 +203,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
               <item name="tool" type="462c0819:PsiDirectoryNode" />
-              <item name="barrier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
               <item name="semaphore" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="resources.jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,7 +220,7 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547963956596" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547965618884" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -246,6 +229,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.guoguozhi.tool.semaphore" />
       <recent name="com.guoguozhi.waitnotify" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -374,7 +358,7 @@
       <workItem from="1547718257743" duration="37556000" />
       <workItem from="1547899560593" duration="419000" />
       <workItem from="1547953079626" duration="728000" />
-      <workItem from="1547954078765" duration="7189000" />
+      <workItem from="1547954078765" duration="8820000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -565,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547801688006</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="测试Semaphore">
+      <created>1547964006920</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1547964006921</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272304000" />
+    <option name="totallyTimeSpent" value="273935000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,7 +575,7 @@
     <frame x="70" y="23" width="1571" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.1489842" visible="true" weight="0.28711575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.1489842" visible="true" weight="0.22825377" />
       <window_info id="Structure" order="1" sideWeight="0.8510158" side_tool="true" weight="0.28711575" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,7 +587,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.41991925" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.5316027" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.3013544" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32844242" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.53724605" />
@@ -618,8 +609,8 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32976282" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.14559819" visible="true" weight="0.26945716" />
-      <window_info id="Structure" order="1" sideWeight="0.8544018" side_tool="true" weight="0.26945716" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.1489842" visible="true" weight="0.28711575" />
+      <window_info id="Structure" order="1" sideWeight="0.8510158" side_tool="true" weight="0.28711575" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -630,10 +621,10 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.41991925" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.53273135" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.3013544" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32844242" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.5846501" />
+      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.53724605" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50038254" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.51580137" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.32731378" />
@@ -666,7 +657,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="定义notifier、waiter并进一步理解通知/等待(生产者-消费者)模型" />
     <MESSAGE value="研究其他线程对waiter的中断影响" />
     <MESSAGE value="等待/通知超时模型实现数据库连接池的获取和释放" />
     <MESSAGE value="50个线程去数据库连接池中获取连接，初步使用AtomicInteger保证了计数器的原子性" />
@@ -691,7 +681,8 @@
     <MESSAGE value="小理解" />
     <MESSAGE value="对破损标志位broken的理解" />
     <MESSAGE value="对barrierAction屏障线程的理解" />
-    <option name="LAST_COMMIT_MESSAGE" value="对barrierAction屏障线程的理解" />
+    <MESSAGE value="测试Semaphore" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试Semaphore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -710,13 +701,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/NotifyLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1050,17 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="266" column="13" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
-          <folding>
-            <element signature="e#8248#8249#0" expanded="true" />
-            <element signature="e#8275#8276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/barrier/UseBarrierAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -1100,10 +1073,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+          <folding>
+            <element signature="e#8248#8249#0" expanded="true" />
+            <element signature="e#8275#8276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Semaphore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="311" column="27" selection-start-line="311" selection-start-column="27" selection-end-line="311" selection-end-column="27" />
+        <state relative-caret-position="373">
+          <caret line="310" column="16" selection-start-line="310" selection-start-column="16" selection-end-line="310" selection-end-column="16" />
           <folding>
             <element signature="e#9084#9085#0" expanded="true" />
             <element signature="e#9131#9132#0" expanded="true" />
@@ -1133,20 +1127,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        <state relative-caret-position="323">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore.java">
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/DBPoolSemaphore2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="50" column="81" lean-forward="true" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
+        <state relative-caret-position="686">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
           </folding>
         </state>
       </provider>

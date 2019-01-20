@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class TestDBPoolSemaphore {
 
-    private static DBPoolSemaphore dbPool = new DBPoolSemaphore();
+    private static DBPoolSemaphore2 dbPool = new DBPoolSemaphore2();
 
     private static class WorkerThread extends Thread {
         @Override
@@ -20,7 +20,7 @@ public class TestDBPoolSemaphore {
                     Connection connection = dbPool.takeConnection();
                     System.out.println(Thread.currentThread().getName() + "获取数据库连接耗时:" + (System.currentTimeMillis() - start) + "毫秒");
                     // 模拟业务操作
-                    SleepTools.sleepForMilliseconds(100 + random.nextInt(100));
+                    SleepTools.sleepForMilliseconds(1000 + random.nextInt(100));
                     System.out.println(Thread.currentThread().getName() + "完成业务操作并归还连接.");
                     // 释放连接
                     dbPool.releaseConnection(connection);
@@ -33,7 +33,9 @@ public class TestDBPoolSemaphore {
 
     public static void main(String[] args) {
         for (int i = 0; i < 50; i++) {
-            (new WorkerThread()).start();
+            WorkerThread workerThread = new WorkerThread();
+            workerThread.setName("worker-" + (i+1));
+            workerThread.start();
         }
     }
 }
