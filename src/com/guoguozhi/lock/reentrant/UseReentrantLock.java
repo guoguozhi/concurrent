@@ -16,6 +16,11 @@ public class UseReentrantLock {
         //  同synchronized关键字的效果
         private void test() {
             reentrantLock.lock();
+            //System.out.println(reentrantLock.isHeldByCurrentThread());
+            //System.out.println(reentrantLock.isLocked());
+            //System.out.println(reentrantLock.isFair());
+            //System.out.println("是否有线程正在等待获取锁 = " + reentrantLock.hasQueuedThreads() + " 个数 = " + reentrantLock.getQueueLength());
+            //System.out.println("当前线程是否在等待中  = " + reentrantLock.hasQueuedThread(Thread.currentThread()));
             try {
                 for (int i = 0; i < 5; i++) {
                     System.out.println("the current thread name is " + Thread.currentThread().getName());
