@@ -1,9 +1,13 @@
 package com.guoguozhi.lock.reentrant;
 
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class UseReentrantLock {
+    //  可重入锁
     private static ReentrantLock reentrantLock = new ReentrantLock();
+    //  条件
+    private static Condition condition = reentrantLock.newCondition();
 
     static class UseRunnable implements Runnable {
         @Override
@@ -16,15 +20,16 @@ public class UseReentrantLock {
         //  同synchronized关键字的效果
         private void test() {
             reentrantLock.lock();
-            //System.out.println(reentrantLock.isHeldByCurrentThread());
-            //System.out.println(reentrantLock.isLocked());
-            //System.out.println(reentrantLock.isFair());
-            //System.out.println("是否有线程正在等待获取锁 = " + reentrantLock.hasQueuedThreads() + " 个数 = " + reentrantLock.getQueueLength());
-            //System.out.println("当前线程是否在等待中  = " + reentrantLock.hasQueuedThread(Thread.currentThread()));
-            try {
+            //  1 has got the lock.0 1 是否在排队 false
+            //  可以从侧面反映了当前线程获取了锁，不然进入不了这段代码
+            //System.out.println(Thread.currentThread().getName() + " has got the lock." + reentrantLock.getQueueLength() + " " + reentrantLock.getHoldCount() + " 是否在排队 " + reentrantLock.hasQueuedThread(Thread.currentThread()));
+                try {
+                condition.await();
                 for (int i = 0; i < 5; i++) {
                     System.out.println("the current thread name is " + Thread.currentThread().getName());
                 }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             } finally {
                 reentrantLock.unlock();
             }
