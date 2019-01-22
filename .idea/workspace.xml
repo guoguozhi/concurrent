@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="简单使用ReentrantLock">
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="关于await的一点小疑惑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/UseReentrantLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/UseReentrantLock.java" afterDir="false" />
     </list>
@@ -37,21 +37,15 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/practice/BinzAtomicInteger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/UseReentrantLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="119">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,7 +145,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="102" />
+    <option name="x" value="85" />
     <option name="y" value="23" />
     <option name="width" value="1540" />
     <option name="height" value="978" />
@@ -162,8 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,13 +193,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548060643344" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548120387648" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -349,7 +343,8 @@
       <workItem from="1547969065668" duration="2000" />
       <workItem from="1547969071225" duration="18581000" />
       <workItem from="1548030526136" duration="11692000" />
-      <workItem from="1548051147628" duration="8798000" />
+      <workItem from="1548051147628" duration="16844000" />
+      <workItem from="1548117850363" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -617,11 +612,25 @@
       <option name="project" value="LOCAL" />
       <updated>1548056970396</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="小测试">
+      <created>1548060652395</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1548060652395</updated>
+    </task>
+    <task id="LOCAL-00040" summary="关于await的一点小疑惑">
+      <created>1548078152895</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1548078152895</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315507000" />
+    <option name="totallyTimeSpent" value="324672000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -633,11 +642,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="102" y="23" width="1540" height="978" extended-state="0" />
+    <frame x="14" y="72" width="1540" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.42212188" visible="true" weight="0.22963952" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5778781" side_tool="true" visible="true" weight="0.22963952" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4214765" visible="true" weight="0.23230974" />
+      <window_info id="Structure" order="1" sideWeight="0.5785235" side_tool="true" weight="0.22963952" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -648,13 +657,13 @@
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49940476" weight="0.46726862" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" weight="0.43679458" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" weight="0.44469526" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32807216" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.2302483" />
+      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.24604966" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005952" side_tool="true" weight="0.30837005" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.51580137" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.3270925" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.3261851" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.5181696" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -670,8 +679,8 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32976282" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31104198" visible="true" weight="0.19486505" />
-      <window_info id="Structure" order="1" sideWeight="0.688958" side_tool="true" weight="0.30875576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.42212188" visible="true" weight="0.22963952" />
+      <window_info id="Structure" order="1" sideWeight="0.5778781" side_tool="true" weight="0.22963952" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -682,13 +691,13 @@
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49940476" weight="0.46726862" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" visible="true" weight="0.23814899" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" weight="0.3860045" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32807216" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.26072234" />
+      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.2302483" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005952" side_tool="true" weight="0.30837005" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.51580137" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.3270925" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.3261851" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.5181696" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -718,8 +727,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fork-join实现递归目录" />
-    <MESSAGE value="CountDownLatch的理解(countDown、await)" />
     <MESSAGE value="await的中断理解" />
     <MESSAGE value="继续CountDownLatch的理解" />
     <MESSAGE value="CyclicBarrier的简单使用" />
@@ -743,7 +750,9 @@
     <MESSAGE value="对AtomicIntegerArray的简单理解" />
     <MESSAGE value="小练习" />
     <MESSAGE value="简单使用ReentrantLock" />
-    <option name="LAST_COMMIT_MESSAGE" value="简单使用ReentrantLock" />
+    <MESSAGE value="小测试" />
+    <MESSAGE value="关于await的一点小疑惑" />
+    <option name="LAST_COMMIT_MESSAGE" value="关于await的一点小疑惑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -762,37 +771,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Semaphore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="310" column="16" selection-start-line="310" selection-start-column="16" selection-end-line="310" selection-end-column="16" />
-          <folding>
-            <element signature="e#9084#9085#0" expanded="true" />
-            <element signature="e#9131#9132#0" expanded="true" />
-            <element signature="e#9671#9672#0" expanded="true" />
-            <element signature="e#9749#9750#0" expanded="true" />
-            <element signature="e#12004#12005#0" expanded="true" />
-            <element signature="e#12041#12042#0" expanded="true" />
-            <element signature="e#13169#13170#0" expanded="true" />
-            <element signature="e#13228#13229#0" expanded="true" />
-            <element signature="e#15885#15886#0" expanded="true" />
-            <element signature="e#15922#15923#0" expanded="true" />
-            <element signature="e#24977#24978#0" expanded="true" />
-            <element signature="e#25017#25018#0" expanded="true" />
-            <element signature="e#26052#26053#0" expanded="true" />
-            <element signature="e#26099#26100#0" expanded="true" />
-            <element signature="e#26572#26573#0" expanded="true" />
-            <element signature="e#26618#26619#0" expanded="true" />
-            <element signature="e#27089#27090#0" expanded="true" />
-            <element signature="e#27133#27134#0" expanded="true" />
-            <element signature="e#27697#27698#0" expanded="true" />
-            <element signature="e#27743#27744#0" expanded="true" />
-            <element signature="e#28058#28059#0" expanded="true" />
-            <element signature="e#28139#28140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/tool/semaphore/TestDBPoolSemaphore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1080,13 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16365">
-          <caret line="1298" column="22" selection-start-line="1298" selection-start-column="22" selection-end-line="1298" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -1123,10 +1094,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicMarkableReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <element signature="e#238#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="1535" column="21" selection-start-line="1535" selection-start-column="21" selection-end-line="1535" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="739" column="33" selection-start-line="739" selection-start-column="33" selection-end-line="739" selection-end-column="33" />
+        <state relative-caret-position="520">
+          <caret line="660" lean-forward="true" selection-start-line="660" selection-end-line="660" />
           <folding>
             <element signature="e#8176#8177#0" expanded="true" />
             <element signature="e#8216#8217#0" expanded="true" />
@@ -1160,68 +1182,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/future/UseFutureTask.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/Condition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicMarkableReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="e#238#246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="239">
+          <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/practice/BinzAtomicInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
+        <state relative-caret-position="510">
           <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/Condition.java">
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/NotifyLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="302" column="40" selection-start-line="302" selection-start-column="32" selection-end-line="302" selection-end-column="40" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/UseReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

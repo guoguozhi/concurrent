@@ -3,6 +3,11 @@ package com.guoguozhi.lock.reentrant;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ *  通知等待标准范式(notify/notifyAll-wait)
+ *  显示锁(Lock)-条件(Condition)
+ *  在使用await和signal/signalAll也是要先获取锁
+ */
 public class UseReentrantLock {
     //  可重入锁
     private static ReentrantLock reentrantLock = new ReentrantLock();
@@ -23,7 +28,7 @@ public class UseReentrantLock {
             //  1 has got the lock.0 1 是否在排队 false
             //  可以从侧面反映了当前线程获取了锁，不然进入不了这段代码
             //System.out.println(Thread.currentThread().getName() + " has got the lock." + reentrantLock.getQueueLength() + " " + reentrantLock.getHoldCount() + " 是否在排队 " + reentrantLock.hasQueuedThread(Thread.currentThread()));
-                try {
+            try {
                 condition.await();
                 for (int i = 0; i < 5; i++) {
                     System.out.println("the current thread name is " + Thread.currentThread().getName());
@@ -53,3 +58,5 @@ try {
     lock.unlock();
 }
  */
+
+//  reentrant.await是阻塞方法，不过会释放锁~
