@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="Lock(ReentrantLock)+Condition实现等待通知">
+    <list default="true" id="d4a12158-e3d0-4014-8fde-891259be162a" name="Default" comment="理解notify和signal的随意性">
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceRWImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceReentrantImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceSynchronizedImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/ExpressionCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/ExpressionCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/TestExpressionCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/TestExpressionCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,60 +44,70 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/UseReentrantLock.java">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/ExpressionCondition.java">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+            <state relative-caret-position="612">
+              <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/TestExpressionCondition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-              <folding>
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding>
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="241" column="56" selection-start-line="241" selection-start-column="47" selection-end-line="241" selection-end-column="56" />
+            <state relative-caret-position="462">
+              <caret line="54" column="73" selection-start-line="54" selection-start-column="73" selection-end-line="54" selection-end-column="73" />
+              <folding>
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceReentrantImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceRWImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,12 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMWaiter.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteWaiter.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/Express_bak.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpress.java" />
-        <option value="$PROJECT_DIR$/src/com/guoguozhi/pool/DBPool.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/pool/TestDBPool.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/latch/TestCountDownLatch.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/latch/TestJoin.java" />
@@ -185,6 +191,12 @@
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteNotifier.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java" />
         <option value="$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodService.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceRWImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceReentrantImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodAction.java" />
       </list>
     </option>
   </component>
@@ -195,7 +207,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
+    <option name="x" value="84" />
     <option name="y" value="23" />
     <option name="width" value="1540" />
     <option name="height" value="978" />
@@ -236,7 +248,8 @@
               <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guoguozhi" type="462c0819:PsiDirectoryNode" />
-              <item name="waitnotify" type="462c0819:PsiDirectoryNode" />
+              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="readwrite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,7 +263,7 @@
     <property name="SearchEverywhereHistoryKey" value="Connection&#9;PSI&#9;JAVA://java.sql.Connection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548143618025" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548168334820" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15564202" />
@@ -278,13 +291,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestExpressNotiferWaiter">
-    <configuration name="BinzAtomicInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.practice.BinzAtomicInteger" />
+  <component name="RunManager" selected="Application.GoodAction">
+    <configuration name="Format" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.test.Format" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.guoguozhi.practice.*" />
+          <option name="PATTERN" value="com.guoguozhi.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -292,12 +305,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Format" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.test.Format" />
+    <configuration name="GoodAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guoguozhi.lock.readwrite.GoodAction" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.guoguozhi.test.*" />
+          <option name="PATTERN" value="com.guoguozhi.lock.readwrite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -345,19 +358,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BinzAtomicInteger" />
       <item itemvalue="Application.UseReentrantLock" />
       <item itemvalue="Application.TestExpressionCondition" />
       <item itemvalue="Application.Format" />
       <item itemvalue="Application.TestExpressNotiferWaiter" />
+      <item itemvalue="Application.GoodAction" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GoodAction" />
         <item itemvalue="Application.TestExpressNotiferWaiter" />
         <item itemvalue="Application.TestExpressionCondition" />
         <item itemvalue="Application.Format" />
         <item itemvalue="Application.UseReentrantLock" />
-        <item itemvalue="Application.BinzAtomicInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +406,7 @@
       <workItem from="1547969071225" duration="18581000" />
       <workItem from="1548030526136" duration="11692000" />
       <workItem from="1548051147628" duration="16844000" />
-      <workItem from="1548117850363" duration="14439000" />
+      <workItem from="1548117850363" duration="27972000" />
     </task>
     <task id="LOCAL-00001" summary="InterruptedException测试">
       <created>1547299314841</created>
@@ -689,11 +702,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548125508442</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="理解notify和signal的随意性">
+      <created>1548143703967</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1548143703967</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337992000" />
+    <option name="totallyTimeSpent" value="351525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,11 +725,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="23" width="1540" height="978" extended-state="0" />
+    <frame x="84" y="23" width="1540" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4214765" visible="true" weight="0.23230974" />
-      <window_info id="Structure" order="1" sideWeight="0.5785235" side_tool="true" weight="0.22963952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.113995485" visible="true" weight="0.2376502" />
+      <window_info id="Structure" order="1" sideWeight="0.8860045" side_tool="true" weight="0.3518024" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -720,10 +740,10 @@
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49940476" weight="0.46726862" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" weight="0.3442438" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32807216" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49940476" weight="0.86004514" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32731378" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.24604966" />
+      <window_info anchor="bottom" x="114" y="320" width="1529" height="384" id="Terminal" order="8" weight="0.4153499" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005952" side_tool="true" weight="0.30837005" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.51580137" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49961746" weight="0.3261851" />
@@ -790,7 +810,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CyclicBarrier的简单使用" />
     <MESSAGE value="测试CyclicBarrier的带线程的构造函数，发现在多线程编程中Thread.currentThread().getName()可能有问题" />
     <MESSAGE value="小修改" />
     <MESSAGE value="线程间数据交换" />
@@ -815,7 +834,8 @@
     <MESSAGE value="关于await的一点小疑惑" />
     <MESSAGE value="小补充" />
     <MESSAGE value="Lock(ReentrantLock)+Condition实现等待通知" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lock(ReentrantLock)+Condition实现等待通知" />
+    <MESSAGE value="理解notify和signal的随意性" />
+    <option name="LAST_COMMIT_MESSAGE" value="理解notify和signal的随意性" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,69 +854,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/org/slf4j/LoggerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="199" column="25" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="25" />
-          <folding>
-            <element signature="e#8235#8236#0" expanded="true" />
-            <element signature="e#8284#8285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/org/slf4j/Marker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/META-INF/maven/org.slf4j/slf4j-api/pom.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.6.jar!/META-INF/maven/org.slf4j/slf4j-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1133" />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/FutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#5351#5352#0" expanded="true" />
-            <element signature="e#5386#5387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="56" column="50" lean-forward="true" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
-          <folding>
-            <element signature="e#2538#2539#0" expanded="true" />
-            <element signature="e#2623#2624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicMarkableReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="152" column="50" lean-forward="true" selection-start-line="152" selection-start-column="50" selection-end-line="152" selection-end-column="50" />
-          <folding>
-            <element signature="e#1481#1482#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1728#1729#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1907#1908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/sum/MakeArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -981,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1044,31 +994,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReadWriteLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/Lock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2527">
           <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1095,53 +1024,6 @@
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="660" lean-forward="true" selection-start-line="660" selection-end-line="660" />
-          <folding>
-            <element signature="e#8176#8177#0" expanded="true" />
-            <element signature="e#8216#8217#0" expanded="true" />
-            <element signature="e#8451#8452#0" expanded="true" />
-            <element signature="e#8515#8516#0" expanded="true" />
-            <element signature="e#9117#9118#0" expanded="true" />
-            <element signature="e#9144#9145#0" expanded="true" />
-            <element signature="e#12210#12211#0" expanded="true" />
-            <element signature="e#12258#12259#0" expanded="true" />
-            <element signature="e#15850#15851#0" expanded="true" />
-            <element signature="e#15881#15882#0" expanded="true" />
-            <element signature="e#17535#17536#0" expanded="true" />
-            <element signature="e#17577#17578#0" expanded="true" />
-            <element signature="e#18553#18554#0" expanded="true" />
-            <element signature="e#18595#18596#0" expanded="true" />
-            <element signature="e#19868#19869#0" expanded="true" />
-            <element signature="e#19915#19916#0" expanded="true" />
-            <element signature="e#20237#20238#0" expanded="true" />
-            <element signature="e#20275#20276#0" expanded="true" />
-            <element signature="e#20462#20463#0" expanded="true" />
-            <element signature="e#20509#20510#0" expanded="true" />
-            <element signature="e#21160#21161#0" expanded="true" />
-            <element signature="e#21198#21199#0" expanded="true" />
-            <element signature="e#21691#21692#0" expanded="true" />
-            <element signature="e#21737#21738#0" expanded="true" />
-            <element signature="e#22843#22844#0" expanded="true" />
-            <element signature="e#22887#22888#0" expanded="true" />
-            <element signature="e#23469#23470#0" expanded="true" />
-            <element signature="e#23515#23516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1215,16 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/UseReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressSiteNotifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1253,17 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/TestExpressNotiferWaiter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -1275,10 +1136,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="251" column="10" lean-forward="true" selection-start-line="251" selection-start-column="10" selection-end-line="251" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/waitnotify/ExpressKMNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/ExpressionCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/TestExpressionCondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="114">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="e#827#828#0" expanded="true" />
             <element signature="e#904#905#0" expanded="true" />
@@ -1286,20 +1175,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/ExpressionCondition.java">
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/ConcurrentRecursiveDirectory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/forkjoin/file/RecursiveDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/atomic/UseAtomicStampedReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="241" column="56" selection-start-line="241" selection-start-column="47" selection-end-line="241" selection-end-column="56" />
+        <state relative-caret-position="427">
+          <caret line="237" column="7" lean-forward="true" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
+          <folding>
+            <element signature="e#7757#7758#0" expanded="true" />
+            <element signature="e#7784#7785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReadWriteLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="111" column="30" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="282" column="7" lean-forward="true" selection-start-line="282" selection-start-column="7" selection-end-line="282" selection-end-column="7" />
+          <folding>
+            <element signature="e#8176#8177#0" expanded="true" />
+            <element signature="e#8216#8217#0" expanded="true" />
+            <element signature="e#8451#8452#0" expanded="true" />
+            <element signature="e#8515#8516#0" expanded="true" />
+            <element signature="e#9117#9118#0" expanded="true" />
+            <element signature="e#9144#9145#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12258#12259#0" expanded="true" />
+            <element signature="e#15850#15851#0" expanded="true" />
+            <element signature="e#15881#15882#0" expanded="true" />
+            <element signature="e#17535#17536#0" expanded="true" />
+            <element signature="e#17577#17578#0" expanded="true" />
+            <element signature="e#18553#18554#0" expanded="true" />
+            <element signature="e#18595#18596#0" expanded="true" />
+            <element signature="e#19868#19869#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#20237#20238#0" expanded="true" />
+            <element signature="e#20275#20276#0" expanded="true" />
+            <element signature="e#20462#20463#0" expanded="true" />
+            <element signature="e#20509#20510#0" expanded="true" />
+            <element signature="e#21160#21161#0" expanded="true" />
+            <element signature="e#21198#21199#0" expanded="true" />
+            <element signature="e#21691#21692#0" expanded="true" />
+            <element signature="e#21737#21738#0" expanded="true" />
+            <element signature="e#22843#22844#0" expanded="true" />
+            <element signature="e#22887#22888#0" expanded="true" />
+            <element signature="e#23469#23470#0" expanded="true" />
+            <element signature="e#23515#23516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/reentrant/UseReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceSynchronizedImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+          <folding>
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceReentrantImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodServiceRWImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guoguozhi/lock/readwrite/GoodAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="54" column="73" selection-start-line="54" selection-start-column="73" selection-end-line="54" selection-end-column="73" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
