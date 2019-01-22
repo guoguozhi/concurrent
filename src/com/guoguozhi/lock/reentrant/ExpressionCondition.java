@@ -5,6 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  *  通过signal-await实现通知等待
+ *  condition发出的通知(信号signal)，只有在condition上等待才会被唤醒(condition.await)，至于唤醒几个await的线程取决于调用了signal还是signalAll
  */
 public class ExpressionCondition {
     // 起点

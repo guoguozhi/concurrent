@@ -46,12 +46,14 @@ public class TestExpressionCondition {
                 checkCurrentSiteThread.start();
             }
 
+            /*
             // 提前创建3个线程检测里程数
             for (int i = 0; i < 3; i++) {
                 CheckCurrentKilometresThread checkCurrentKilometresThread = new CheckCurrentKilometresThread();
                 checkCurrentKilometresThread.setName("check-kilometres-thread-" + (i+1));
                 checkCurrentKilometresThread.start();
             }
+           */
 
             // 休眠3s，将检测线程都启动
             SleepTools.sleepForSeconds(3);
@@ -61,10 +63,12 @@ public class TestExpressionCondition {
             changeCurrentSiteThread.setName("change-site-thread");
             changeCurrentSiteThread.start();
 
+            /*
             // 创建改变里程数线程
             ChangeCurrentKilometresThread changeCurrentKilometresThread = new ChangeCurrentKilometresThread();
             changeCurrentKilometresThread.setName("change-kilometres-thread");
             changeCurrentKilometresThread.start();
+            */
         }
 
 }

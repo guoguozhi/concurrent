@@ -20,7 +20,7 @@ public class ExpressKMNotifier extends Thread {
             // 改变里程数
             this.express.setCurrentKilometres(101);
             // 发出通知
-            this.express.notifyAll();
+            this.express.notify();
             System.out.println("改变当前里程数的线程: "+ threadName);
             // 进行自己的业务处理
             System.out.println("结束改变当前里程数并发出通知." + threadName);
