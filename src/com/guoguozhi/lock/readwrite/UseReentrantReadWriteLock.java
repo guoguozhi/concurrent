@@ -1,12 +1,14 @@
 package com.guoguozhi.lock.readwrite;
 
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class UseReentrantReadWriteLock {
     private static final ReentrantReadWriteLock lock =  new ReentrantReadWriteLock();
     private static final Lock readLock = lock.readLock();
     private static final Lock writeLock = lock.writeLock();
+    private static final ReentrantLock lock2 = new ReentrantLock();
 
     static class UseReadRunnable implements Runnable {
         @Override
@@ -24,6 +26,27 @@ public class UseReentrantReadWriteLock {
                     }
                 } finally {
                     readLock.unlock();
+                }
+            }
+        }
+    }
+
+    static class UseReadRunnable2 implements Runnable {
+        @Override
+        public void run() {
+            if (!Thread.currentThread().isInterrupted()) {
+                lock2.lock();
+                try {
+                    long start = System.currentTimeMillis();
+                    System.out.println(Thread.currentThread().getName() + "读线程-可重入锁");
+                    try {
+                        Thread.sleep(3000);
+                        System.out.println(Thread.currentThread().getName() + "读耗时-可重入锁:" + (System.currentTimeMillis() - start) + "毫秒");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                } finally {
+                    lock2.unlock();
                 }
             }
         }
@@ -76,11 +99,21 @@ public class UseReentrantReadWriteLock {
             readThread.start();
         }
         */
+
+        /*
         //  读写锁写写互斥
         for (int i = 0; i < 10; i++) {
             UseWriteRunnable useWriteRunnable = new UseWriteRunnable();
             Thread writeThread = new Thread(useWriteRunnable, "writeThread" + (i + 1));
             writeThread.start();
         }
+        */
+
+        for (int i = 0; i < 10; i++) {
+            UseReadRunnable2 useReadRunnable2 = new UseReadRunnable2();
+            Thread readThread = new Thread(useReadRunnable2, "readThread" + ( + 1));
+            readThread.start();
+        }
+
     }
 }
