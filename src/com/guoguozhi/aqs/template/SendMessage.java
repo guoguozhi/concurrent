@@ -16,7 +16,7 @@ public abstract class SendMessage {
     // 发送
     public abstract void send();
 
-    //  框架方法
+    //  框架方法 / 流程方法
     public void sendMessage() {
         //  调用模板方法
         from();
